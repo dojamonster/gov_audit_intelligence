@@ -1,0 +1,9 @@
+contractor_id,amount_lakh,delay_days,previous_issues,severity
+C001,10,2,0,LOW
+C002,80,10,2,HIGH
+C003,15,3,0,LOW
+C004,100,15,3,HIGH
+C005,12,2,0,LOW
+C006,60,8,2,HIGH
+C007,20,4,1,LOW
+C008,500,15,3,HIGH
