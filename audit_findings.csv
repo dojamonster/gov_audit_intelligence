@@ -1,0 +1,9 @@
+finding_id,contractor_id,finding_text,severity
+F001,C001,Minor delay in project completion,LOW
+F002,C002,Significant delay and previous audit issues,HIGH
+F003,C003,No major irregularity found,LOW
+F004,C004,Excess payment and project delay,HIGH
+F005,C005,Work completed with minor delay,LOW
+F006,C006,Repeated issues and delayed completion,HIGH
+F007,C007,Minor compliance issue,LOW
+F008,C008,Major delay with previous issues,HIGH
