@@ -25,12 +25,6 @@ def build_full_pdf_url(pdf_url: str) -> str:
 
 
 def safe_filename(title: str, report_id: str) -> str:
-    """
-    Build a filesystem-safe filename from the report title, since titles
-    contain characters (commas, colons, slashes) that aren't safe in
-    filenames on some systems. Keeping the report_id avoids collisions
-    when two titles are very similar.
-    """
     cleaned = "".join(c if c.isalnum() or c in " -_" else "_" for c in title)
     cleaned = cleaned.strip()[:100]  
     return f"{report_id}_{cleaned}.pdf"
