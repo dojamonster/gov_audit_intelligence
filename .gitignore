@@ -1,0 +1,23 @@
+#Downloaded/scraped data -- regenerable by running the scraper, not source code
+downloaded_pdfs/
+retrieved_data*.html
+retrieveddatabiharmaharastra.html
+ 
+# Generated JSON output
+cag_reports.json
+cag_reports_filtered.json
+page_classification.json
+ 
+# Logs
+pipeline_log.txt
+ 
+# OCR output
+ocred_pdfs/
+ 
+# Mac system file
+.DS_Store
+ 
+# Python cache (if any scripts get run and generate this)
+__pycache__/
+*.pyc
+ 
