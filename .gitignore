@@ -1,3 +1,4 @@
+ HEAD
 __pycache__/
 *.pyc
 .venv/
@@ -5,3 +6,7 @@ venv/
 .env
 
 
+
+.DS_Store
+cron_output.log
+ f457789 (Add data pipeline scripts and gitignore)
