@@ -6,4 +6,4 @@ venv/
 .DS_Store
 cron_output.log
 downloaded_pdfs/
-lora_model_v2.zip
+lora_model_v2.zipocred_pdfs/
