@@ -117,7 +117,8 @@ counts = c["contractor_name"].value_counts()
 st.title("🏛️ Government Audit Intelligence Platform")
 st.caption("Contractor findings from CAG audit reports, with source citations")
 
-tab1, tab2, tab3 = st.tabs(["Overview", "Contractor profile", "About"])
+tab1, tab2, tab_search, tab3 = st.tabs(
+    ["Overview", "Contractor profile", "Search", "About"])
 
 
 with tab1:
@@ -181,3 +182,42 @@ Each row keeps its report, paragraph and page so it can be verified.
 - This page shows findings and citations only. It does not give a risk rating,
   because the real data has no severity or delay fields.
     """)
+    with tab_search:
+        st.subheader("Search findings")
+    q = st.text_input(
+        "Search", label_visibility="collapsed",
+        placeholder="Try: WAPCOS, excess_payment, Mumbai, 2.1.12, royalty ...")
+    in_text = st.checkbox("Also search the full paragraph text", value=True)
+
+    fields = ["Para_id", "CONTRACTOR NAME", "FINDING TYPE", "category",
+              "DEPARTMENT", "SCHEME", "district", "STATE", "SOURCE CITATION"]
+    if in_text:
+        fields.append("para_text")
+
+    if q.strip():
+        blob = m[fields].fillna("").astype(str).agg(" ".join, axis=1)
+        mask = pd.Series(True, index=m.index)
+        for term in q.split():
+            mask &= blob.str.contains(term, case=False, regex=False)
+        hits = m[mask]
+
+        st.write(f"**{len(hits)}** result(s) for “{q}”")
+        if len(hits):
+            show = pd.DataFrame({
+                "Para": hits["Para_id"],
+                "Contractor": hits["CONTRACTOR NAME"].fillna("-"),
+                "Finding type": hits["FINDING TYPE"].fillna("Not classified"),
+                "Amount (Rs crore)": hits["AMOUNT (CRORES)"].map(money),
+                "Year": hits["YEAR"].map(year),
+                "Source citation": hits["SOURCE CITATION"].fillna(""),
+            })
+            st.dataframe(show, use_container_width=True, hide_index=True)
+
+            with st.expander("Show paragraph text (first 10 results)"):
+                for _, r in hits.head(10).iterrows():
+                    st.markdown(f"**{r['Para_id']}**")
+                    st.write(r["para_text"] if pd.notna(r["para_text"])
+                             else "(no text)")
+    else:
+        st.info("Type a contractor, finding type, place or paragraph number "
+                "to search all 195 findings.")
