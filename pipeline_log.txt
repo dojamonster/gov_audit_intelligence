@@ -1,0 +1,100 @@
+[2026-09-24 23:19:43] === Pipeline run started ===
+[2026-09-24 23:19:43] Starting: data_collection_html.py
+[2026-09-24 23:19:45] Finished: data_collection_html.py
+[2026-09-24 23:19:45] Starting: parsing_bs4.py
+[2026-09-24 23:19:45] Finished: parsing_bs4.py
+[2026-09-24 23:19:45] Starting: pdf_downloads.py
+[2026-09-24 23:19:46] Finished: pdf_downloads.py
+[2026-09-24 23:19:46] === Pipeline run completed successfully ===
+[2026-09-25 18:24:51] === Pipeline run started ===
+[2026-09-25 18:24:51] Starting: data_collection_html.py
+[2026-09-25 18:24:55] Finished: data_collection_html.py
+[2026-09-25 18:24:55] Starting: parsing_bs4.py
+[2026-09-25 18:24:55] Finished: parsing_bs4.py
+[2026-09-25 18:24:55] Starting: pdfdownloaded.py
+[2026-09-25 18:24:55] FAILED: pdfdownloaded.py
+[2026-09-25 18:24:55]   stderr: /Library/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/deveshkumarsrivastav/Desktop/CAG AUDIT SCRAPER/pdfdownloaded.py': [Errno 2] No such file or directory
+[2026-09-25 18:24:55] === Pipeline STOPPED early due to failure in pdfdownloaded.py ===
+[2026-09-26 00:14:32] === Pipeline run started ===
+[2026-09-26 00:14:32] Starting: data_collection_html.py
+[2026-09-26 00:14:37] Finished: data_collection_html.py
+[2026-09-26 00:14:37] Starting: parsing_bs4.py
+[2026-09-26 00:14:37] Finished: parsing_bs4.py
+[2026-09-26 00:14:37] Starting: pdfdownloaded.py
+[2026-09-26 00:14:37] FAILED: pdfdownloaded.py
+[2026-09-26 00:14:37]   stderr: /Library/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/deveshkumarsrivastav/Desktop/CAG AUDIT SCRAPER/pdfdownloaded.py': [Errno 2] No such file or directory
+[2026-09-26 00:14:37] === Pipeline STOPPED early due to failure in pdfdownloaded.py ===
+[2026-09-26 00:27:59] === Pipeline run started ===
+[2026-09-26 00:27:59] Starting: data_collection_html.py
+[2026-09-26 00:28:02] Finished: data_collection_html.py
+[2026-09-26 00:28:02] Starting: parsing_bs4.py
+[2026-09-26 00:28:02] Finished: parsing_bs4.py
+[2026-09-26 00:28:02] Starting: pdfdownloads.py
+[2026-09-26 00:28:02] FAILED: pdfdownloads.py
+[2026-09-26 00:28:02]   stderr: /Library/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/deveshkumarsrivastav/Desktop/CAG AUDIT SCRAPER/pdfdownloads.py': [Errno 2] No such file or directory
+[2026-09-26 00:28:02] === Pipeline STOPPED early due to failure in pdfdownloads.py ===
+[2026-09-26 00:29:29] === Pipeline run started ===
+[2026-09-26 00:29:29] Starting: data_collection_html.py
+[2026-09-26 00:29:32] Finished: data_collection_html.py
+[2026-09-26 00:29:32] Starting: parsing_bs4.py
+[2026-09-26 00:29:32] Finished: parsing_bs4.py
+[2026-09-26 00:29:32] Starting: pdf_downloads.py
+[2026-09-26 00:29:33] Finished: pdf_downloads.py
+[2026-09-26 00:29:33] === Pipeline run completed successfully ===
+[2026-09-26 00:31:15] === Pipeline run started ===
+[2026-09-26 00:31:15] Starting: data_collection_html.py
+[2026-09-26 00:31:17] Finished: data_collection_html.py
+[2026-09-26 00:31:17] Starting: parsing_bs4.py
+[2026-09-26 00:31:17] Finished: parsing_bs4.py
+[2026-09-26 00:31:17] Starting: pdf_downloads.py
+[2026-09-26 00:31:17] Finished: pdf_downloads.py
+[2026-09-26 00:31:17] === Pipeline run completed successfully ===
+[2026-09-26 00:33:54] === Pipeline run started ===
+[2026-09-26 00:33:54] Starting: data_collection_html.py
+[2026-09-26 00:33:57] Finished: data_collection_html.py
+[2026-09-26 00:33:57] Starting: parsing_bs4.py
+[2026-09-26 00:33:57] Finished: parsing_bs4.py
+[2026-09-26 00:33:57] Starting: pdf_downloads.py
+[2026-09-26 00:33:57] Finished: pdf_downloads.py
+[2026-09-26 00:33:57] === Pipeline run completed successfully ===
+[2026-09-27 00:00:07] === Pipeline run started ===
+[2026-09-27 00:00:07] Starting: data_collection_html.py
+[2026-09-27 00:00:10] Finished: data_collection_html.py
+[2026-09-27 00:00:10] Starting: parsing_bs4.py
+[2026-09-27 00:00:11] Finished: parsing_bs4.py
+[2026-09-27 00:00:11] Starting: pdf_downloads.py
+[2026-09-27 00:00:11] Finished: pdf_downloads.py
+[2026-09-27 00:00:11] Starting: ocr_tesseract.py
+[2026-09-27 00:00:11] FAILED: ocr_tesseract.py
+[2026-09-27 00:00:11]   stderr: /Library/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/deveshkumarsrivastav/Desktop/CAG AUDIT SCRAPER/ocr_tesseract.py': [Errno 2] No such file or directory
+[2026-09-27 00:00:11] === Pipeline STOPPED early due to failure in ocr_tesseract.py ===
+[2026-09-27 01:00:00] === Pipeline run started ===
+[2026-09-27 01:00:00] Starting: data_collection_html.py
+[2026-09-27 01:00:04] Finished: data_collection_html.py
+[2026-09-27 01:00:04] Starting: parsing_bs4.py
+[2026-09-27 01:00:04] Finished: parsing_bs4.py
+[2026-09-27 01:00:04] Starting: pdf_downloads.py
+[2026-09-27 01:00:04] Finished: pdf_downloads.py
+[2026-09-27 01:00:04] Starting:  ocr_tesseract.py
+[2026-09-27 01:00:04] Finished:  ocr_tesseract.py
+[2026-09-27 01:00:04] === Pipeline run completed successfully ===
+[2026-09-27 01:39:52] === Pipeline run started ===
+[2026-09-27 01:39:52] Starting: data_collection_html.py
+[2026-09-27 01:39:55] Finished: data_collection_html.py
+[2026-09-27 01:39:55] Starting: parsing_bs4.py
+[2026-09-27 01:39:55] Finished: parsing_bs4.py
+[2026-09-27 01:39:55] Starting: pdf_downloads.py
+[2026-09-27 01:39:55] Finished: pdf_downloads.py
+[2026-09-27 01:39:55] Starting:  ocr_tesseract.py
+[2026-09-27 01:39:55] Finished:  ocr_tesseract.py
+[2026-09-27 01:39:55] === Pipeline run completed successfully ===
+[2026-09-28 00:00:00] === Pipeline run started ===
+[2026-09-28 00:00:00] Starting: data_collection_html.py
+[2026-09-28 00:00:06] Finished: data_collection_html.py
+[2026-09-28 00:00:06] Starting: parsing_bs4.py
+[2026-09-28 00:00:06] Finished: parsing_bs4.py
+[2026-09-28 00:00:06] Starting: pdf_downloads.py
+[2026-09-28 00:00:06] Finished: pdf_downloads.py
+[2026-09-28 00:00:06] Starting:  ocr_tesseract.py
+[2026-09-28 00:00:06] Finished:  ocr_tesseract.py
+[2026-09-28 00:00:06] === Pipeline run completed successfully ===

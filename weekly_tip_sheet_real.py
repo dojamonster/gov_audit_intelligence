@@ -1,14 +1,16 @@
 import pandas as pd
 from html import escape
 
+from make_jsonl import clean
+
 CONTRACTOR = "WAPCOS"   
-
-clean = pd.read_csv("contractor_names_fallback.csv")   # one name per row
+clean = pd.read_csv("contractor_names.csv")
+SKIP = r"\bPWD\b|Public Works|UPDESCO|14 private|Annexure"
+clean = clean[~clean["contractor_name"].str.contains(SKIP, case=False, regex=True)]
 mapped = pd.read_csv("findings_mapped.csv")
-
-counts = clean["contractor_name"].value_counts()
-n_contractors = counts.size
-n_repeat = int((counts > 1).sum())
+counts = clean["cleaned_name"].value_counts()
+n_contractors = clean["contractor_name"].nunique()
+n_repeat = int((clean["contractor_name"].value_counts() > 1).sum())
 
 rows = mapped[mapped["CONTRACTOR NAME"].astype(str)
               .str.contains(CONTRACTOR, case=False, na=False)]

@@ -43,8 +43,7 @@ for _, r in rows.iterrows():
     data.append([cell(r["Para_id"]), cell(ftype), cell(cat),
                  cell(money(r["AMOUNT (CRORES)"])), cell(year(r["YEAR"])),
                  cell(r["SOURCE CITATION"])])
-
-table = Table(data, colWidths=[55, 85, 75, 48, 30, 230], repeatRows=1)
+table = Table(data, colWidths=[75, 85, 92, 45, 30, 196], repeatRows=1)
 table.setStyle(TableStyle([
     ("BACKGROUND", (0, 0), (-1, 0), colors.HexColor("#1f3a5f")),
     ("GRID", (0, 0), (-1, -1), 0.4, colors.grey),
