@@ -115,7 +115,7 @@ $("chips").addEventListener("click",ev=>{const d=ev.target.closest("[data-k]"); 
 document.addEventListener("click",ev=>{if(!ev.target.closest(".sw"))sug.style.display="none"});
 
 /* ---- LoRA model connection ---- */
-const API_URL="https://prissy-corner-evidence.ngrok-free.dev"; // e.g. https://xxxx.ngrok-free.app
+const API_URL="https://drainable-crock-boggle.ngrok-free.dev"; // e.g. https://xxxx.ngrok-free.app
 $("lm_btn").addEventListener("click",async()=>{
   const text=$("lm_in").value.trim(), out=$("lm_out"), btn=$("lm_btn");
   if(!text){out.innerHTML='<p class="empty">Paste a paragraph first.</p>';return;}
